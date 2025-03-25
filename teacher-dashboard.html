@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1>Welcome, Teacher/Admin!</h1>
+
+    <!-- Student List -->
+    <div class="student-list">
+      <h2>Student List</h2>
+      <ul id="studentList">
+        <li>John Doe</li>
+        <li>Jane Smith</li>
+        <li>Alice Johnson</li>
+        <li>Bob Brown</li>
+      </ul>
+    </div>
+
+    <!-- Create New Item Section -->
+    <div class="create-item">
+      <h2>Create New Item</h2>
+      <button id="createItemBtn">Create New Item</button>
+      <form id="itemForm" class="hidden">
+        <div class="form-group">
+          <label for="itemName">Item Name:</label>
+          <input type="text" id="itemName" name="itemName" required>
+        </div>
+        <div class="form-group">
+          <label for="itemImage">Item Image (Optional):</label>
+          <input type="file" id="itemImage" name="itemImage" accept="image/*">
+        </div>
+        <button type="submit">Add Item</button>
+      </form>
+    </div>
+
+    <!-- Display Created Items -->
+    <div class="created-items">
+      <h2>Created Items</h2>
+      <ul id="createdItemsList"></ul>
+    </div>
+
+    <!-- Logout Button -->
+    <button id="logoutBtn">Logout</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
